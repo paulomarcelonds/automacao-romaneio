@@ -70,9 +70,9 @@ def criar_pdf(data, movimento, tecnico, data_formatada):
     if movimento.upper() == 'DEVOLUCAO': 
         pdf.ln(10)
         pdf.set_font('Arial', size=10)
-        mensagem = ("Por meio deste documento, o signatário abaixo identificado" 
+        mensagem = ("Por meio deste documento, o signatário abaixo identificado " 
                     "formaliza a devolução dos materiais especificados a seguir"
-                    "à parte interessada, reconhecendo o término de qualquer" 
+                    "à parte interessada, reconhecendo o término de qualquer " 
                     "responsabilidade pela sua guarda a partir da data de devolução:\n\n"
                     "Assinatura do Responsável: _________________________")
         pdf.multi_cell(0, 10, mensagem)
